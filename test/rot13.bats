@@ -24,3 +24,8 @@ teardown() {
 	faucet --compact
 	assert_identical dist/hello.txt hello.txt
 }
+
+@test "it processes options" {
+	faucet
+	assert_identical dist/hello.txt hello.txt
+}
